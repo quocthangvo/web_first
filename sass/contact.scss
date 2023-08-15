@@ -1,0 +1,156 @@
+@import 'style';
+@import 'service';
+
+.restoran {
+    &-heading {
+        &:nth-last-child(4) {
+            height: 40rem;
+            margin-bottom: 4.5rem;
+        }
+
+    }
+
+    &-title {
+        text-align: center;
+        padding-top: 4.5rem;
+
+        &-name {
+            font-family: 'Pacifico', cursive;
+            color: $primary;
+            font-weight: 350;
+            font-size: 2rem;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                @include size(5rem, 0.2rem);
+                background-color: $primary;
+                top: 50%;
+                left: 55rem;
+                transform: translateY(-50%);
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                @include size(5rem, 0.2rem);
+                background-color: $primary;
+                top: 50%;
+                right: 55rem;
+                transform: translateY(-50%);
+            }
+        }
+
+        &-content {
+            font-size: 4rem;
+            padding-bottom: 3rem;
+        }
+
+        &-list {
+            display: flex;
+
+            padding: 0 2.5rem;
+            position: relative;
+        }
+
+        &-item {
+            text-align: start;
+            width: 33.33%;
+
+            p {
+                color: #999;
+                font-size: 1.6rem;
+            }
+
+            i {
+                margin-right: 1rem;
+                color: $primary;
+            }
+        }
+
+        &-intro {
+            color: $primary;
+            font-family: 'Pacifico', cursive;
+            font-weight: 350;
+            position: relative;
+            font-size: 2rem;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 0.2rem;
+                width: 5rem;
+                background-color: $primary;
+                top: 50%;
+                left: 8rem;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &_info {
+        height: 49rem;
+        display: flex;
+        padding: 4.5rem 0;
+
+        &_right,
+        &_left {
+            width: 50%;
+        }
+
+        &_right {
+            padding: 0 2.5rem;
+            height: 100%;
+            background-color: white;
+        }
+
+        &_top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_input {
+            width: 29.5rem;
+            height: 6rem;
+            padding: 1.5rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 2px;
+            background-color: white;
+            border: 1px solid #eee;
+            transition: 0.25s linear;
+
+            &:focus {
+                box-shadow: 0 0 0 3px #fea11659;
+
+            }
+        }
+
+        &_sub {
+            width: 100%;
+        }
+
+        &_left {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &_send {
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 1.5rem;
+            padding: 2rem 0;
+            background-color: #FEA116;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+
+            &:hover {
+                background-color: #fea116e3;
+            }
+        }
+    }
+}

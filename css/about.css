@@ -1,0 +1,636 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 1.5rem;
+    font-weight: normal;
+    background-color: #F1F8FF;
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 1.6rem;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  textarea {
+    -moz-appearance: none;
+    outline: 0px none transparent;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+  
+  .restoran {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 132rem;
+  }
+  .restoran-contact, .restoran-content, .restoran-menu, .restoran-info, .restoran-master, .restoran-client {
+    padding: 4.5rem 2.5rem;
+  }
+  .restoran-animation {
+    animation: top 0.5s linear;
+  }
+  .restoran-heading {
+    position: relative;
+    z-index: 1;
+    height: 40rem;
+    background-color: #0F172B;
+  }
+  .restoran-heading-option {
+    height: 9.2rem;
+    display: flex;
+    padding: 0 5rem;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+  }
+  .restoran-heading-res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FEA116;
+    font-size: 2rem;
+    position: absolute;
+  }
+  .restoran-heading-icon {
+    padding-right: 2rem;
+    font-size: 4rem;
+  }
+  .restoran-heading-home {
+    display: inline-block;
+    transition: all 0.25s linear;
+    margin-left: 2rem;
+    color: white;
+    padding: 3rem 0;
+  }
+  .restoran-heading-home:last-child {
+    background-color: #FEA116;
+    padding: 1rem 2.5rem;
+    border-radius: 2px;
+    font-size: 1.6rem;
+  }
+  .restoran-heading-home:not(:last-child) {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .restoran-heading-home:not(:last-child):hover {
+    color: #FEA116;
+  }
+  .restoran-heading-home:hover:last-child {
+    background-color: #f8b54f;
+  }
+  .restoran-heading-color:nth-child(2) {
+    color: #FEA116;
+    font-size: 1.5rem;
+
+  }
+  .restoran-heading-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    animation: fly1 0.5s both;
+    position: relative;
+    z-index: 3;
+  }
+  .restoran-heading-dropdown:hover .restoran-heading-drop {
+    opacity: 1;
+  }
+  .restoran-heading-drop {
+    position: absolute;
+    opacity: 0;
+    min-width: 10rem;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.2s linear;
+  }
+  .restoran-heading-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 4.5rem 0.5rem 2rem;
+    color: black;
+    font-size: 1.6rem;
+  }
+  .restoran-heading-item:hover {
+    background-color: rgba(153, 153, 153, 0.1647058824);
+  }
+  .restoran-heading-page {
+    position: relative;
+    margin-right: 1rem;
+  }
+  .restoran-heading-page:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-top: 0.5rem solid white;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    top: 45%;
+    right: -1.5rem;
+    transition: all 0.25s linear;
+  }
+  .restoran-heading-page:hover:after {
+    border-top: 0.5rem solid #FEA116;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+  }
+  .restoran-heading-bottom {
+    height: auto;
+  }
+  .restoran-heading-enjoy {
+    text-align: center;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+  .restoran-heading-enjoy h1{
+    font-size: 6rem;
+    animation: bottom 0.5s linear;
+  }
+  .restoran-heading-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+  .restoran-heading-list h2:not(:first-child):before{
+    padding: 1rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/") ;
+    font-size: 1.5rem;
+  }
+  .restoran-heading-list h2:not(:last-child){
+    cursor: pointer;
+    color: #FEA116;
+  }
+
+  
+  
+  .restoran-content {
+    display: flex;
+  }
+  .restoran-content-left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restoran-content-about {
+    width: 30rem;
+    height: 30rem;
+    padding: 0 8px;
+  }
+  .restoran-content-about:first-child {
+    animation: zoom 0.5s linear;
+  }
+  .restoran-content-about:nth-child(2) {
+    animation: zoom 1s linear;
+  }
+  .restoran-content-about:nth-child(3) {
+    animation: zoom 1.5s linear;
+  }
+  .restoran-content-about:last-child {
+    animation: zoom 1.7s linear;
+  }
+  .restoran-content-about:nth-child(2) {
+    width: 22rem;
+    height: 22rem;
+    margin-top: 8rem;
+  }
+  .restoran-content-about:nth-child(3) {
+    margin-left: 8rem;
+    width: 22rem;
+    height: 22rem;
+  }
+  .restoran-content-left, .restoran-content-right {
+    width: 50%;
+  }
+  .restoran-content-right {
+    margin-top: 8rem;
+  }
+  .restoran-content-right h3 {
+    margin-top: 2rem;
+    font-family: "Pacifico", cursive;
+    color: #FEA116;
+    position: relative;
+    font-weight: 300;
+  }
+  .restoran-content-right h3:after {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #FEA116;
+    top: 50%;
+    left: 14%;
+    transform: translateY(-50%);
+  }
+  .restoran-content-right p {
+    font-size: 1.6rem;
+    color: #999;
+    margin: 2rem 0;
+  }
+  .restoran-content-welcom {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .restoran-content-welcom i {
+    padding-right: 1rem;
+    color: #FEA116;
+  }
+  .restoran-content-number {
+    margin-top: 3rem;
+    display: flex;
+  }
+  .restoran-content-auto {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    position: relative;
+  }
+  .restoran-content-auto h1 {
+    font-size: 4rem;
+    color: #FEA116;
+  }
+  .restoran-content-auto :before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #FEA116;
+    left: -10%;
+    top: 0;
+  }
+  .restoran-content-year {
+    margin-left: 2.5rem;
+    margin-right: 10rem;
+  }
+  .restoran-content-year h5 {
+    color: #999;
+    font-weight: 350;
+    font-size: 1.5rem;
+  }
+  .restoran-content-read {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.7rem 5rem;
+    background-color: #FEA116;
+    cursor: pointer;
+  }
+  .restoran-content-read a {
+    color: white;
+    font-weight: 700;
+  }
+  
+  
+  .restoran-master {
+    text-align: center;
+  }
+  .restoran-master h2 {
+    font-family: "Pacifico", cursive;
+    color: #FEA116;
+    font-weight: 350;
+    font-size: 2rem;
+    position: relative;
+  }
+  .restoran-master h2:before {
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #FEA116;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+  .restoran-master h2:after {
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #FEA116;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+  }
+  .restoran-master h1 {
+    font-size: 4.5rem;
+  }
+  .restoran-master-list {
+    display: flex;
+    margin-top: 4.5rem;
+  }
+  .restoran-master-user:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  .restoran-master-user:first-child {
+    animation: top 0.7s linear;
+  }
+  .restoran-master-user:nth-child(2) {
+    animation: top 0.8s linear;
+  }
+  .restoran-master-user:nth-child(3) {
+    animation: top 0.9s linear;
+  }
+  .restoran-master-user:last-child {
+    animation: top 1s linear;
+  }
+  .restoran-master-scale {
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+    height: calc(100% - 4rem);
+    transition: all 0.25s linear;
+    border-radius: 2px;
+  }
+  .restoran-master-scale:hover {
+    height: 100%;
+  }
+  .restoran-master-scale:hover a {
+    opacity: 1;
+  }
+  .restoran-master-scale:hover img {
+    transform: scale(1.1);
+  }
+  .restoran-master-scale a {
+    opacity: 0;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    color: white;
+    background-color: #FEA116;
+    border-radius: 4rem 4rem 0 0;
+  }
+  .restoran-master-scale a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  .restoran-master-image {
+    padding: 2.5rem;
+  }
+  .restoran-master img {
+    border-radius: 50%;
+    transition: all 0.25s linear;
+  }
+  .restoran-master h3 {
+    font-size: 2rem;
+  }
+  .restoran-master h4 {
+    color: #999;
+    font-weight: 350;
+    margin-bottom: 1rem;
+  }
+  .restoran-master-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    background: hidden;
+  }
+  
+  .restoran-footer {
+    background-color: #0F172B;
+    color: white;
+    margin-top: 4.5rem;
+    padding-top: 4.5rem;
+  }
+  .restoran-footer-list {
+    display: flex;
+    padding: 4.5rem 0;
+    justify-content: space-between;
+  }
+  .restoran-footer-user {
+    width: 33rem;
+    height: 20rem;
+    padding: 0 2.5rem;
+  }
+  .restoran-footer-user h2 {
+    display: inline-block;
+    font-family: "Pacifico", cursive;
+    color: #FEA116;
+    font-weight: 350;
+    font-size: 2.5rem;
+    position: relative;
+  }
+  .restoran-footer-user h2:after {
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #FEA116;
+    top: 50%;
+    right: -6rem;
+    transform: translateY(-50%);
+  }
+  .restoran-footer-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .restoran-footer-item a {
+    margin-top: 1rem;
+    color: white;
+  }
+  .restoran-footer-item h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+  .restoran-footer-item h4 {
+    margin-top: 1rem;
+    font-weight: 350;
+    font-size: 1.6rem;
+  }
+  .restoran-footer-item p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .restoran-footer-id {
+    font-size: 1.6rem;
+  }
+  .restoran-footer-id i {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .restoran-footer-icon {
+    display: flex;
+  }
+  .restoran-footer-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .restoran-footer-email {
+    margin-top: 1rem;
+    position: relative;
+  }
+  .restoran-footer-email input {
+    width: 100%;
+    height: 6rem;
+    padding-left: 1rem;
+    border: 1px solid #FEA116;
+  }
+  .restoran-footer-email input:focus {
+    box-shadow: 0 0 0 4px rgba(254, 161, 22, 0.3843137255);
+    border-radius: 2px;
+  }
+  .restoran-footer-email button {
+    position: absolute;
+    background-color: #FEA116;
+    color: white;
+    padding: 0.9rem;
+    font-size: 1.7rem;
+    border: 1px solid #FEA116;
+    border-radius: 1px;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .restoran-footer-border {
+    border-top: 1px solid rgba(238, 238, 238, 0.1098039216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+  .restoran-footer-left {
+    display: flex;
+    align-items: center;
+  }
+  .restoran-footer-left i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  .restoran-footer-left a {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  .restoran-footer-right a {
+    color: white;
+    padding-left: 1.7rem;
+  }
+  .restoran-footer-right a:not(:last-child) {
+    padding-right: 1.5rem;
+    border-right: 1px solid rgba(238, 238, 238, 0.1098039216);
+  }
+  
+  @keyframes round {
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fly {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translateZ(0);
+    }
+  }
+  @keyframes fly1 {
+    0% {
+      transform: translate(10%);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  @keyframes top {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes bottom {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(0%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  @keyframes zoomround {
+    0% {
+      transform: scale(100%);
+      background-color: inherit;
+    }
+    100% {
+      transform: scale(150%);
+      background-color: rgba(248, 181, 79, 0.1921568627);
+    }
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
