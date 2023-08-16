@@ -190,14 +190,16 @@ input[type="number"]::-webkit-inner-spin-button {
             position: relative;
             z-index: 3;
         }
-        &-bar{
+
+        &-bar {
             display: none;
         }
+
         &-dropdown {
             &:hover {
                 .restoran-heading-drop {
                     opacity: 1;
-                   
+
                 }
             }
 
@@ -206,7 +208,7 @@ input[type="number"]::-webkit-inner-spin-button {
         &-drop {
             position: absolute;
             opacity: 0;
-           
+
             min-width: 10rem;
             padding: 1rem 0;
             background-color: white;
@@ -773,14 +775,14 @@ input[type="number"]::-webkit-inner-spin-button {
         }
 
         &-textarea {
-            
+
             &:focus {
                 box-shadow: 0 0 0 3px #fea11659;
 
             }
 
         }
-       
+
 
         &-book {
             width: 100%;
@@ -1276,4 +1278,3 @@ input[type="number"]::-webkit-inner-spin-button {
         transform: scale(1, 1);
     }
 }
-
