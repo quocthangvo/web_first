@@ -1,0 +1,602 @@
+@import 'style';
+@import 'about';
+@import 'service';
+@import 'page';
+@import 'contact';
+
+@media screen and (max-width:1437px) {
+    .restoran {
+        width: 768px;
+
+        &-heading {
+            height: 1500px;
+
+
+            &-option {
+
+                padding: 1rem 2.5rem;
+
+            }
+
+            &-title {
+                // flex-direction: column;
+                // align-items: start;
+                margin-top: 10rem;
+                // opacity: 0;
+                background-color: inherit;
+                width: 100%;
+                // position: absolute;
+                // z-index: -1;
+            }
+
+            &-home {
+                padding: 1rem 2.1rem;
+                margin: 0;
+                text-align: start;
+
+            }
+
+            // &-bar {
+            //     display: inline-block;
+            //     color: #999;
+            //     border: 2px solid #999;
+            //     background-color: inherit;
+            //     cursor: pointer;
+            //     position: relative;
+            //     left: 67rem;
+            //     top: -7rem;
+
+            //     i {
+            //         @include size(3rem);
+            //         font-size: 2rem;
+            //         padding-top: 0.5rem;
+            //         text-align: center;
+            //     }
+            //     &:hover{
+            //         .restoran-heading-title{
+            //             opacity: 1;
+            //             visibility: visible;
+            //         }
+            //         i{
+            //             color: white;
+            //         }
+            //     }
+            // }
+
+            &-page {
+                &:after {
+                    right: 0.5rem;
+                }
+            }
+
+
+            &-enjoy {
+                display: block;
+            }
+
+            &-left,
+            &-right {
+                text-align: center;
+                width: 100%;
+                margin: 0;
+                // padding: 0;
+            }
+
+            &-left {
+                h1 {
+                    padding-top: 10rem;
+                    padding-left: 15rem;
+                    padding-right: 15rem;
+                }
+
+                p {
+                    padding: 0 2rem
+                }
+            }
+
+            &-right {
+                padding-top: 5rem
+            }
+
+            &-img {
+                align-items: center;
+                @include size(70rem);
+
+            }
+        }
+
+        &-contact {
+
+            &-list {
+                flex-wrap: wrap;
+
+            }
+
+            &-master {
+                margin-left: 0;
+                width: 45%;
+                margin-top: 2.5rem;
+                margin-right: 0;
+
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+
+                &:nth-last-child(3) {
+                    margin-right: 0;
+                }
+
+            }
+        }
+
+        &-content {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+                // padding: 0 1rem;
+
+                justify-content: space-between;
+            }
+
+            &-about {
+                width: 35rem;
+                height: 35rem;
+
+                &:first-child {
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+
+                &:nth-last-child(3) {
+                    margin-top: 14rem;
+                    margin-right: 13rem;
+                }
+
+                &:nth-last-child(2) {
+                    margin-left: 14rem;
+                }
+
+                // &:last-child{
+                //     margin-right: 2rem;
+                // }
+            }
+        }
+
+        &-menu {
+            &-name {
+                width: 61rem;
+            }
+
+            h4 {
+                width: 61rem;
+            }
+
+            h3 {
+                &:before {
+                    right: 25rem;
+                }
+
+                &:after {
+                    left: 25rem;
+                }
+            }
+
+            &-list {
+                flex-direction: column;
+            }
+
+            &-right {
+                padding: 2rem 0;
+            }
+        }
+
+        &-info {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+            }
+
+            &-input {
+                width: 32rem;
+
+            }
+
+            &-text {
+                width: 67rem;
+            }
+
+            label {
+                left: 51.5%;
+            }
+        }
+
+        &-master {
+            h2 {
+                &:before {
+                    left: 60%;
+                }
+
+                &:after {
+                    right: 60%;
+                }
+            }
+
+            &-list {
+                // width: 50%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            &-user {
+                width: 33rem;
+                margin-top: 2rem;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-client {
+
+            h2 {
+                &:before {
+                    left: 35%;
+                }
+
+                &:after {
+                    right: 35%;
+                }
+            }
+        }
+
+        &-footer {
+            &-list {
+                flex-wrap: wrap;
+            }
+
+            &-left,
+            &-right {
+                width: 50%;
+            }
+        }
+
+        &_info {
+            &_top {
+                display: block;
+            }
+
+            &_input {
+                width: 100%;
+            }
+
+            &_text {
+                width: 33.5rem;
+                height: 8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .restoran {
+        width: 412px;
+
+        &-heading {
+            height: 1200px;
+
+            &-option {
+                padding: 1rem 2.5rem;
+            }
+
+            &-title {
+                margin-top: 10rem;
+                background-color: inherit;
+                width: 100%;
+                flex-direction: column;
+                margin-top: 30rem;
+                align-items: start;
+                // opacity: 0;
+            }
+
+            &-home {
+                padding: 1rem 0;
+                margin: 0;
+                text-align: start;
+            }
+
+            // &-bar {
+            //     display: inline-block;
+            //     color: #999;
+            //     border: 2px solid #999;
+            //     background-color: inherit;
+            //     cursor: pointer;
+            //     position: relative;
+
+
+            //     i {
+            //         @include size(3rem);
+            //         font-size: 2rem;
+            //         padding-top: 0.5rem;
+            //         text-align: center;
+            //     }
+            // }
+
+            &-page {
+                &:after {
+                    right: 0.5rem;
+                }
+            }
+
+
+            &-enjoy {
+                display: block;
+            }
+
+            &-left,
+            &-right {
+                text-align: center;
+                width: 100%;
+                margin: 0;
+                // padding: 0;
+            }
+
+            &-left {
+                padding: 0;
+                width: 412px;
+
+                h1 {
+
+                    padding: 10rem 5rem 0 5rem;
+                }
+
+                p {
+                    // padding: 0 2rem 
+                    text-align: center;
+                }
+            }
+
+            &-right {
+                padding: 5rem 1rem 0 2rem;
+            }
+
+            &-img {
+                align-items: center;
+                @include size(37rem);
+
+            }
+        }
+
+        &-contact {
+
+            &-list {
+                flex-wrap: wrap;
+            }
+
+            &-master {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 2.5rem;
+
+
+                &:nth-last-child(2) {
+                    margin-right: 0;
+                }
+
+                &:nth-last-child(4) {
+                    margin-right: 0;
+                }
+
+            }
+        }
+
+        &-content {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            &-about {
+                width: 18rem;
+                height: 18rem;
+                margin: 0;
+
+                &:first-child {
+                    margin-top: 0rem;
+                    margin-left: 0rem;
+                }
+
+                &:nth-last-child(3) {
+                    margin-top: 5rem;
+                    margin-right: 5rem;
+                    width: 13rem;
+                    height: 13rem;
+                }
+
+                &:nth-last-child(2) {
+                    margin-left: 5rem;
+                    width: 13rem;
+                    height: 13rem;
+                }
+
+
+            }
+
+
+
+            &-number {
+                display: block;
+
+            }
+
+            &-auto {
+                margin-top: 2rem;
+            }
+
+            &-right {
+                h3 {
+                    &:after {
+                        left: 23%;
+                    }
+                }
+            }
+        }
+
+        &-menu {
+            &-icon {
+                &:after {
+                    left: -24px;
+                }
+
+                &:before {
+                    left: -24px;
+                }
+            }
+
+            &-name {
+                width: 26rem;
+            }
+
+            h4 {
+                width: 26rem;
+            }
+
+            h3 {
+                &:before {
+                    right: 25rem;
+                }
+
+                &:after {
+                    left: 25rem;
+                }
+            }
+
+            &-list {
+                flex-direction: column;
+            }
+
+            &-right {
+                padding: 2rem 0;
+            }
+        }
+
+        &-info {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+            }
+
+            &-input {
+                width: 32rem;
+
+            }
+
+            &-text {
+                width: 32rem;
+            }
+
+            label {
+                left: 51.5%;
+            }
+        }
+
+        &-master {
+            h2 {
+                &:before {
+                    left: 25rem;
+                }
+
+                &:after {
+                    right: 25rem;
+                }
+            }
+
+            &-list {
+
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &-user {
+                width: 33rem;
+                margin-top: 2rem;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-client {
+            &-user {
+                margin-top: 1rem;
+
+                &:not(:last-child) {
+                    margin-right: 0rem;
+                }
+            }
+
+            &-list {
+                display: block;
+            }
+
+            h2 {
+                &:before {
+                    left: 25rem;
+                }
+
+                &:after {
+                    right: 25rem;
+                }
+            }
+        }
+
+        &-footer {
+            &-left {
+                i {
+                    margin-bottom: 2rem;
+                    margin-right: -1rem;
+                }
+            }
+
+            &-border {
+                display: block;
+            }
+
+            &-list {
+                flex-wrap: wrap;
+            }
+
+            &-left,
+            &-right {
+                width: 100%;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+
+        &_info {
+            &_top {
+                display: block;
+            }
+
+            &_input {
+                width: 100%;
+            }
+
+            &_text {
+                width: 33.5rem;
+                height: 8rem;
+            }
+        }
+    }
+}

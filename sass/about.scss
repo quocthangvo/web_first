@@ -1,13 +1,13 @@
-@import 'style';
+
 
 .restoran {
     &-heading {
-        height: 45rem;
+        
         &:nth-last-child(3) {
             height: 40rem;
             margin-bottom: 4.5rem;
         }
-
+      
         &-content {
             text-align: center;
             color: white;

@@ -190,11 +190,14 @@ input[type="number"]::-webkit-inner-spin-button {
             position: relative;
             z-index: 3;
         }
-
+        &-bar{
+            display: none;
+        }
         &-dropdown {
             &:hover {
                 .restoran-heading-drop {
                     opacity: 1;
+                   
                 }
             }
 
@@ -203,6 +206,7 @@ input[type="number"]::-webkit-inner-spin-button {
         &-drop {
             position: absolute;
             opacity: 0;
+           
             min-width: 10rem;
             padding: 1rem 0;
             background-color: white;
@@ -769,19 +773,14 @@ input[type="number"]::-webkit-inner-spin-button {
         }
 
         &-textarea {
-
+            
             &:focus {
                 box-shadow: 0 0 0 3px #fea11659;
 
             }
 
-            // label{
-            //     left: 52%;
-            //     padding: 2rem 2.3rem;
-            //     font-size: 1.6rem;
-            //     color: black;
-            // }
         }
+       
 
         &-book {
             width: 100%;
@@ -1278,205 +1277,3 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
-@media screen and (max-width:1439px) {
-    .restoran {
-        width: 768px;
-
-        &-heading {
-            height: 1400px;
-
-            &-enjoy {
-                display: block;
-            }
-
-            &-left,
-            &-right {
-                text-align: center;
-                width: 100%;
-                margin: 0;
-                // padding: 0;
-            }
-
-            &-left {
-                h1 {
-                    padding-top: 10rem;
-                    padding-left: 15rem;
-                    padding-right: 15rem;
-                }
-
-                p {
-                    padding: 0 2rem
-                }
-            }
-
-            &-right {
-                padding-top: 5rem
-            }
-
-            &-img {
-                align-items: center;
-                @include size(70rem);
-
-            }
-        }
-
-        &-contact {
-
-            &-list {
-                flex-wrap: wrap;
-
-
-            }
-
-            &-master {
-                margin-left: 0;
-                width: 45%;
-                margin-top: 2.5rem;
-                margin-right: 0;
-
-                &:nth-last-child(1) {
-                    margin-right: 0;
-                }
-
-                &:nth-last-child(3) {
-                    margin-right: 0;
-                }
-
-            }
-        }
-
-        &-content {
-            flex-direction: column;
-
-            &-left,
-            &-right {
-                width: 100%;
-                // padding: 0 1rem;
-
-                justify-content: space-between;
-            }
-
-            &-about {
-                width: 35rem;
-                height: 35rem;
-
-                &:first-child {
-                    margin-top: 1rem;
-                    margin-left: 1rem;
-                }
-
-                &:nth-last-child(3) {
-                    margin-top: 14rem;
-                    margin-right: 13rem;
-                }
-
-                &:nth-last-child(2) {
-                    margin-left: 14rem;
-                }
-
-                // &:last-child{
-                //     margin-right: 2rem;
-                // }
-            }
-        }
-
-        &-menu {
-            &-name {
-                width: 61rem;
-            }
-
-            h4 {
-                width: 61rem;
-            }
-
-            h3 {
-                &:before {
-                    right: 25rem;
-                }
-
-                &:after {
-                    left: 25rem;
-                }
-            }
-
-            &-list {
-                flex-direction: column;
-            }
-
-            &-right {
-                padding: 2rem 0;
-            }
-        }
-
-        &-info {
-            flex-direction: column;
-
-            &-left,
-            &-right {
-                width: 100%;
-            }
-
-            &-input {
-                width: 32rem;
-
-            }
-
-            &-textarea {
-                width: 30rem;
-            }
-
-            label {
-                left: 51.5%;
-            }
-        }
-
-        &-master {
-            h2 {
-                &:before {
-                    left: 60%;
-                }
-
-                &:after {
-                    right: 60%;
-                }
-            }
-
-            &-list {
-                // width: 50%;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-
-            &-user {
-                width: 33rem;
-                margin-top: 2rem;
-
-                &:not(:last-child) {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        &-client {
-
-            h2 {
-                &:before {
-                    left: 35%;
-                }
-
-                &:after {
-                    right: 35%;
-                }
-            }
-        }
-
-        &-footer {
-            &-list {
-                flex-wrap: wrap;
-            }
-            &-left,&-right{
-                width: 50%;
-            }
-        }
-    }
-}
